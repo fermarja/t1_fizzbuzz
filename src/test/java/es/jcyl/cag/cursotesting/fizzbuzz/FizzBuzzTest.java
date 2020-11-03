@@ -10,9 +10,9 @@ public class FizzBuzzTest {
 	}
 	
 	
-	@Test
+	@Test(expected = IllegalArgumentException.class)
 	public void testCero() {
-		Assert.assertEquals("0", convert(0));
+		convert(0);
 	}
 	
 	@Test
