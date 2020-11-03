@@ -50,6 +50,12 @@ public class FizzBuzzTest {
 		Assert.assertEquals("Buzz", convert(52));
 	}
 	
+	@Test
+	public void testModificacionWhizzMultiplos7() {
+		Assert.assertEquals("Whizz", convert(7));
+	}
+	
+	
 	private String convert(int value) {
 		FizzBuzz conversor = new FizzBuzz();
 		conversor.addConverter(new FizzBuzzConverter());
