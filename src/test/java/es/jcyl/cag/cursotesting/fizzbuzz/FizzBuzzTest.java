@@ -42,6 +42,10 @@ public class FizzBuzzTest {
 	
 	private String convert(int value) {
 		FizzBuzz conversor = new FizzBuzz();
+		conversor.addConverter(new FizzBuzzConverter());
+		conversor.addConverter(new FizzConverter());
+		conversor.addConverter(new BuzzConverter());
+		conversor.addConverter(new DefaultConverter());
 		return conversor.convertToString(value);
 	}
 }
