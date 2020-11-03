@@ -1,5 +1,47 @@
 package es.jcyl.cag.cursotesting.fizzbuzz;
 
+import org.junit.Assert;
+import org.junit.Test;
+
 public class FizzBuzzTest {
 
+	public FizzBuzzTest () {
+		super();
+	}
+	
+	
+	@Test
+	public void testCero() {
+		Assert.assertEquals("0", convert(0));
+	}
+	
+	@Test
+	public void testUno() {
+		Assert.assertEquals("1", convert(1));
+	}
+	@Test
+	public void testDos() {
+		Assert.assertEquals("2", convert(1));
+	}
+	
+	@Test
+	public void testTres() {
+		Assert.assertEquals("Fizz", convert(3));
+	}
+	
+	@Test
+	public void tresCinco() {
+		Assert.assertEquals("Buzz", convert(5));
+	}
+	
+	@Test 
+	public void testQuince() {
+		Assert.assertEquals("FizzBuzz?", convert(15));
+	}
+	
+	
+	private String convert(int value) {
+		FizzBuzz conversor = new FizzBuzz();
+		return conversor.convertToString(value);
+	}
 }
