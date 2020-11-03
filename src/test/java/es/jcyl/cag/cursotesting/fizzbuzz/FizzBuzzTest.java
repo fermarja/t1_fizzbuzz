@@ -71,6 +71,12 @@ public class FizzBuzzTest {
 		Assert.assertEquals("Whizz", convert(number));
 	}
 	
+	@Test
+	@Parameters({"21", "35"} )
+	public void testWhizzPreferenteSobreAnteriores(int number) {
+		Assert.assertEquals("Whizz", convert(number));
+	}
+	
 	
 	private String convert(int value) {
 		FizzBuzz conversor = new FizzBuzz();
