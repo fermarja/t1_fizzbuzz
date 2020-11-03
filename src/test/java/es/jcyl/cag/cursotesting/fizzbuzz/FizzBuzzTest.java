@@ -45,6 +45,11 @@ public class FizzBuzzTest {
 		Assert.assertEquals("Fizz", convert(13));
 	}
 	
+	@Test
+	public void testModifcacionBuzzSiTiene5() {
+		Assert.assertEquals("Buzz", convert(52));
+	}
+	
 	private String convert(int value) {
 		FizzBuzz conversor = new FizzBuzz();
 		conversor.addConverter(new FizzBuzzConverter());
