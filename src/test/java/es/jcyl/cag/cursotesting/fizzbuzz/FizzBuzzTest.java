@@ -21,7 +21,7 @@ public class FizzBuzzTest {
 	}
 	@Test
 	public void testDos() {
-		Assert.assertEquals("2", convert(1));
+		Assert.assertEquals("2", convert(2));
 	}
 	
 	@Test
