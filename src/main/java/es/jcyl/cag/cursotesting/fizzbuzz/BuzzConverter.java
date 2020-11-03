@@ -11,7 +11,7 @@ public class BuzzConverter implements Converter {
 	}
 
 	public boolean isCoverterFor(int number) {
-		return number % 5 == 0;
+		return number % 5 == 0 || Integer.toString(number).contains("5");
 	}
 }
 
